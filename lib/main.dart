@@ -103,6 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
       if (event.action == "DWELL") {
         var identifier = event.identifier;
         print("dwelling~~~ in $identifier");
+        // check notification preference of user
         NotificationPreference pref = NotificationPreferenceParser.parse(
             await Storage.getNotificationPreference());
         if (pref == NotificationPreference.ALWAYS ||
