@@ -125,7 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
         }
       }
       if (event.action == "ENTER") {
-        // send notification
+        // send notification about entering geofence
       }
     });
   }
